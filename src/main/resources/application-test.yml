@@ -1,0 +1,18 @@
+spring:
+  redis:
+    password: 123456
+    sentinel:
+      master: master1002
+      nodes: localhost:15002
+    database: 1
+    timeout: 5000
+    jedis:
+      pool:
+        max-wait: 5500
+        max-idle: 8
+        max-active: 8
+
+#日志级别
+logging:
+  level:
+    fun.liuyu2783.websocket: debug

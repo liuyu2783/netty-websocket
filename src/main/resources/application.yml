@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: netty-websocket
+  profiles:
+    active: test
+
+server:
+  port: 8899
+
+# socket配置
+cmc:
+  socket:
+    socket-port: 9999
+    ping-interval: 60000
+    ping-timeout: 180000
+    upgradeTimeout: 10000
+  broadcast:
+    times: 5
+  max-wait-millis: 30000 #毫秒
+
+
